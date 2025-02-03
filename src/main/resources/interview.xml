@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>XML contains interview column-aliases</comment>
+    <entry key="ID">№</entry>
+    <entry key="EVENTDATE">Дата прохождения</entry>
+    <entry key="APPLICANT_ID">№ соискателя</entry>
+    <entry key="RESULT">Результат</entry>
+</properties>

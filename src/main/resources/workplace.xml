@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>XML contains workplace column-aliases</comment>
+    <entry key="ID">№</entry>
+    <entry key="BEGINDATE">Дата начала</entry>
+    <entry key="ENDDATE">Дата окончания</entry>
+    <entry key="APPLICANT_ID">№ соискателя</entry>
+    <entry key="JOBDESCRIPTION">Описание</entry>
+</properties>
