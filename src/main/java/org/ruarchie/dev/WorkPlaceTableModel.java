@@ -12,7 +12,8 @@ public class WorkPlaceTableModel<T extends WorkPlace> extends CustomTableModel<T
 
         super();
         setTableData(String.format("select * from workplace where applicant_id = %s order by id", applicantId));
-        setColumns(inputStreamName, "workplace");
+        setTableColumns("workplace");
+        setAliases(inputStreamName);
         workPlaces = new ArrayList<>(tableData);
     }
 

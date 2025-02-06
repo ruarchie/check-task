@@ -15,7 +15,8 @@ public class InterviewTableModel <T extends Interview> extends CustomTableModel<
 
         super();
         setTableData(String.format("select * from interview where applicant_id = %s order by id", applicantId));
-        setColumns(inputStreamName, "interview");
+        setTableColumns("interview");
+        setAliases(inputStreamName);
         interviews = new ArrayList<>(tableData);
     }
 

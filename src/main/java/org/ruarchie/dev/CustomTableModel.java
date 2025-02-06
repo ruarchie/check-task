@@ -26,19 +26,19 @@ public abstract class CustomTableModel<T> extends DefaultTableModel {
         tableData = dbQuery.getData();
     }
 
-    protected List<String> getColumns(String tableName) {
+    protected void setTableColumns(String tableName) {
         var dbQuery = new DBQuery("select column_name from information_schema.columns where table_name = '" + tableName.toUpperCase() + "'");
         var colData = dbQuery.getData();
         for (var cd : colData) {
             String colName = String.valueOf(cd.get("COLUMN_NAME"));
             columns.add(colName);
         }
-        return columns;
+        //return columns;
     }
 
-    protected void setColumns(String inputStreamName, String tableName) {
+    protected void setAliases(String inputStreamName) {
 
-        this.columns = getColumns(tableName);
+//        this.columns = getColumns(tableName);
         try (InputStream inputStream = new FileInputStream(inputStreamName)) {
             Properties props = new Properties();
             props.loadFromXML(inputStream);

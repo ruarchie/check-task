@@ -213,7 +213,7 @@ public class MainFrame extends JFrame {
             jLabStatus.setText("Неверный формат даты");
         }
 
-        appTabModel = new ApplicantTableModel<>("target/classes/resources/applicant.xml", "applicant");
+        appTabModel = new ApplicantTableModel<>("target/classes/resources/applicant.xml");
         appTabModel.addAliases();
         appTabModel.addData();
         appTabModel.updateEducationField();

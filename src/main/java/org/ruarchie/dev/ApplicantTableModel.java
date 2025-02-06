@@ -10,11 +10,12 @@ public class ApplicantTableModel<T extends Applicant> extends CustomTableModel<T
 
    // private final List<Map<String, Object>> applicants;
 
-    public ApplicantTableModel(String inputStreamName, String tableName) {
+    public ApplicantTableModel(String inputStreamName) {
 
         super();
         setTableData("select * from applicant");
-        setColumns(inputStreamName, tableName);
+        setTableColumns("applicant");
+        setAliases(inputStreamName);
         //setTableData();
 
         var dbQuery = new DBQuery("select * from education_type");
